@@ -7,7 +7,6 @@
     <Company>f14shm4n</Company>
     <Description>Classes and utilities for JQuery DataTables.</Description>
     <Copyright>f14shm4n</Copyright>
-    <PackageLicenseUrl>http://www.apache.org/licenses/LICENSE-2.0.html</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/f14shm4n/f14.JQueryDataTables</PackageProjectUrl>
     <RepositoryUrl>https://github.com/f14shm4n/f14.JQueryDataTables.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
@@ -17,8 +16,19 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile></DocumentationFile>
-    <NoWarn>1701;1702;1705;1591</NoWarn>
+    <NoWarn>1701;1702;1705;1591;1584;1658</NoWarn>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="licenses\LICENSE.txt" Pack="true" PackagePath=""/>
+  </ItemGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\netstandard1.0\f14.JQueryDataTables.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
